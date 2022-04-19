@@ -16,4 +16,4 @@ spec:
         - name: nakoteypipelinesjavascriptdocker 
           image: acrtest3.azurecr.io/nakoteypipelinesjavascriptdocker
           ports:
-          - containerPort: 80
+          - containerPort: 3000
