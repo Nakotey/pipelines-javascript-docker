@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nakoteypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nakoteypipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: nakoteypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: nakoteypipelinesjavascriptdocker 
+          image: acrtest3.azurecr.io/nakoteypipelinesjavascriptdocker
+          ports:
+          - containerPort: 80
